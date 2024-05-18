@@ -28,7 +28,7 @@ try{
   bot.hears('Ok', ctx=> ctx.reply('Thank You 👍'));
   bot.hears('Okay', ctx=> ctx.reply('Thank You 👍'));
   bot.hears('Who are you', ctx=> ctx.reply('I am a telegram bot, developed by Omair Saad'))
-  bot.hears("How are you", ctx=> ctx.reply("Fine bsdk tu bata"));
+  bot.hears("How are you", ctx=> ctx.reply("Fine bsdk tu bata 😄"));
   bot.hears('Thank you', ctx=> ctx.reply('Thanks for using 👍'));
   bot.on('text', ctx=> ctx.reply("Wrong Entry, Try again dude, Warna pele jaoge 😄"));
   bot.launch();
