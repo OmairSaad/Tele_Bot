@@ -6,7 +6,7 @@ const axios = require('axios');
 //use async
 const dotenv = require('dotenv');
 dotenv.config();
-
+const http = require('http');
 const { Telegraf } = require('telegraf')
 const { message } = require('telegraf/filters')
 
@@ -32,7 +32,11 @@ try{
   bot.hears('Thank you', ctx=> ctx.reply('Thanks for using 👍'));
   bot.on('text', ctx=> ctx.reply("Wrong Entry, Try again dude, Warna pele jaoge 😄"));
   bot.launch();
-  console.log("Running Succesfully......");
 }catch(er){
   console.log("Something wrong...");
 }
+http.createServer((req,res)=>{
+  res.end("Bot Running Succesfully")
+}).listen(8080, ()=>{
+  console.log("Port 8080");
+})
