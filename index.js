@@ -37,6 +37,6 @@ try{
 }
 http.createServer((req,res)=>{
   res.end("Bot Running Succesfully")
-}).listen(8080, ()=>{
-  console.log("Port 8080");
+}).listen(3000, ()=>{
+  console.log("Port 3000");
 })
